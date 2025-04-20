@@ -1569,3 +1569,51 @@
     animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   }
 }
+
+
+
+.logoimage{
+    width: 100px; 
+    height: auto;
+    margin-top: 0%; 
+    margin-left: -1%; 
+    margin-bottom: 0%;
+    margin-right: -0%;
+}
+
+
+
+ @media (max-width: 500px) {
+    .logoimage{
+        width: 100px; 
+        height: auto;
+        margin-top: 0%; 
+        margin-left: -6%; 
+        margin-bottom: 0%;
+        margin-right: -6%;
+    }
+    .text-primary{
+        margin-left: 0%;
+    }
+    .navbar.navbar-expand-lg .navbar-toggler {
+        margin-left: 0;
+    }
+    /* put your css styles in here */
+  }
+  @media (max-width: 800px) {
+    .logoimage{
+        width: 100px; 
+        height: auto;
+        margin-top: 0%; 
+        margin-left: -6%; 
+        margin-bottom: 0%;
+        margin-right: -6%;
+    }
+    .text-primary{
+        margin-left: 0%;
+    }
+    .navbar.navbar-expand-lg .navbar-toggler {
+        padding-left: -4%;
+    }
+    /* put your css styles in here */
+  }
