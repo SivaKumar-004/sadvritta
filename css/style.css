@@ -1,3 +1,7 @@
+body, html, * {
+    font-family: "Qanelas Medium", "Montserrat", Arial, Helvetica, sans-serif !important;
+}
+
 
 /*** Spinner Start ***/
 /*** Spinner ***/
@@ -74,6 +78,17 @@
     box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
     color: var(--bs-primary) !important;
 }
+
+.btn-call, .btn-call:focus{
+    box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
+    color: var(--bs-primary) !important;
+
+}
+.btn-call:hover, .btn-call:focus{
+    box-shadow: inset 300px 0 0 0 var(--bs-primary) !important;
+    color: var(--bs-light) !important;
+} 
+
 
 .btn.btn-light {
     box-shadow: inset 0 0 0 0 var(--bs-primary);
@@ -383,6 +398,47 @@
 
     .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
         width: 95% !important;
+    }
+    .carousel-caption-content h5 {
+        font-size: 12px !important;
+    }
+    .carousel-caption-content h1 {
+        font-size: 22px !important;
+    }
+    .carousel-caption-content p {
+        font-size: 13px !important;
+    }
+        /* Carousel text sizes */
+    .carousel-caption-content h5 {
+        font-size: 12px !important;
+    }
+    .carousel-caption-content h1 {
+        font-size: 22px !important;
+    }
+    .carousel-caption-content p {
+        font-size: 13px !important;
+    }
+    /* Navbar adjustments for mobile */
+    .navbar {
+        padding-top: 0.3rem !important;
+        padding-bottom: 0.3rem !important;
+        min-height: 48px !important;
+    }
+    .navbar .navbar-brand img,
+    .navbar-light .navbar-brand img {
+        max-height: 32px !important;
+    }
+    .navbar .navbar-brand h1 {
+        font-size: 14px !important;
+    }
+    .navbar .nav-link {
+        font-size: 13px !important;
+        padding: 8px 0 !important;
+        margin-right: 8px !important;
+    }
+    .btn {
+        font-size: 13px !important;
+        padding: 6px 16px !important;
     }
  
 }
@@ -1581,7 +1637,9 @@
     margin-right: -0%;
 }
 
-
+.text-secondary {
+    color: #ffffff !important;   
+}
 
  @media (max-width: 500px) {
     .logoimage{
@@ -1595,6 +1653,7 @@
     .text-primary{
         margin-left: 0%;
     }
+
     .navbar.navbar-expand-lg .navbar-toggler {
         margin-left: 0;
     }
