@@ -31,6 +31,32 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Topbar fade-in */
+            .topbar-animate {
+                animation: topbarFadeIn 1s ease;
+            }
+            @keyframes topbarFadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            /* Button slide-in from left */
+            .btn-animate {
+                animation: btnSlideIn 1s 0.2s both;
+            }
+            @keyframes btnSlideIn {
+                from { transform: translateX(-40px); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            /* Text slide-in from right */
+            .text-animate {
+                animation: textSlideIn 1s 0.4s both;
+            }
+            @keyframes textSlideIn {
+                from { transform: translateX(40px); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+        </style>
     </head>
 
     <body>
@@ -70,12 +96,13 @@
 
 
         <!-- Topbar Start -->
-        <div class="container-fluid bg-dark d-none d-lg-block" style="height: 45px;">
+        <div class="container-fluid bg-dark topbar-animate"
+             style="height: 45px; position: fixed; top: 0; left: 0; width: 100%; z-index: 1050;">
             <a href="#">
-            <div class="d-flex justify-content-center align-items-center h-100">
-                <button type="button" class="btn btn-primary text-white me-3">NEW</button>
-                <a href="#" class="text-light" style="margin-top:7px;">Slots Open For Prasava Raksha: Book a Free Consultation →</a>
-            </div>
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <button type="button" class="btn btn-primary text-white me-3 btn-animate">NEW</button>
+                    <a href="#" class="text-light text-animate" style="margin-top:7px;">Slots Open For Prasava Raksha: Book a Free Consultation →</a>
+                </div>
             </a>
         </div>
         <!-- Topbar End -->
@@ -83,7 +110,7 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0" style="margin-top: 45px; position: fixed; top: 0; left: 0; width: 100%; z-index: 1040;">
                 <img src="img/logo.png" class="logoimage" alt="Logo">
                 <a href="index.html" class="navbar-brand p-0">
                     
@@ -249,23 +276,35 @@ motherhood through a qualified team of Doctors and Therapists combining
         <!-- About End -->
 
         <!-- Feature Start -->
-        <div class="container-fluid feature py-5">
+        <div class="container-fluid feature py-5" style="min-height: 100vh;">
             <div class="container py-5">
                 <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="sub-style">
                         <h4 class="sub-title px-3 mb-0">Our Wall Of Love</h4>
                     </div>
+                    <div>
                     <h4 class="mb-0">Apart from our 100+ 5-star reviews on Google, our happy mothers have so much more to share about their feelings with Sadvritta.</h4>
-                      <script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
-                    <iframe id='testimonialto-sadvritta-tag-all-light' src="https://embed-v2.testimonial.to/w/sadvritta?theme=light&card=small&loadMore=on&initialCount=24&tag=all&cc=off" frameborder="0" scrolling="no" width="100%"></iframe>
+                    <br>
+                    <script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
+                    <iframe id='testimonialto-sadvritta-tag-all-light' src="https://embed-v2.testimonial.to/w/sadvritta?theme=light&card=small&loadMore=on&initialCount=24&tag=all&cc=off" frameborder="0" scrolling="no" width="100%" style="max-height: 100vh;"></iframe>
                     <script type="text/javascript">iFrameResize({log: false, checkOrigin: false}, '#testimonialto-sadvritta-tag-all-light');</script>
-               
+                    </div>
                 </div>
                 
 
                     <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
-                    </div>
+    <a href="#" id="showMoreBtn" class="btn btn-primary rounded-pill text-white py-3 px-5">Show More</a>
+</div>
+<script>
+    document.addEventListFener('DOMContentLoaded', function () {
+        var btn = document.getElementById('showMoreBtn');
+        var iframe = document.getElementById('testimonialto-sadvritta-tag-all-light');
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            iframe.style.maxHeight = '100%';
+        });
+    });
+</script>
                 </div>
             </div>
         </div>
@@ -500,106 +539,70 @@ motherhood through a qualified team of Doctors and Therapists combining
         </div>
         <!-- Team End -->
 
-
-        <!-- Testimonial Start -->
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-
-
-
-
-
-
-
-
-
-
-        <!-- Testimonial End -->
-
-
-        <!-- Blog Start -->
-        <div class="container-fluid blog py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0">Our Blog</h4>
-                    </div>
-                    <h1 class="display-3 mb-4">Excellent Facility and High Quality Therapy</h1>
-                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="blog-item rounded">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" class="img-fluid w-100" alt="Image">
-                            </div>
-                            <div class="blog-centent p-4">
-                                <div class="d-flex justify-content-between mb-4">
-                                    <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                                    <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+        <!-- FAQ Section Start -->
+        <section style="background:#f7f7f7; padding: 60px 0;">
+            <div class="container">
+                <h2 class="text-center mb-5" style="font-family: 'Montserrat', sans-serif; color: #3d5943;">Frequently Asked Questions</h2>
+                <div class="mx-auto" style="max-width:700px;">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3" style="border: 2px solid #3d5943; border-radius: 12px;">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1" style="font-size: 1.3rem; font-family: 'Montserrat', sans-serif; color: #3d5943;">
+                                    What are the benefits of the Prasava Raksha package?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:#3d5943;">
+                                    The Prasava Raksha package offers holistic postnatal care, personalized treatments, and support from qualified doctors and therapists to ensure a healthy recovery for mothers.
                                 </div>
-                                <a href="#" class="h4">Remove back Pain While Working on o physio</a>
-                                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="blog-item rounded">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" class="img-fluid w-100" alt="Image">
-                            </div>
-                            <div class="blog-centent p-4">
-                                <div class="d-flex justify-content-between mb-4">
-                                    <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                                    <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+                        <div class="accordion-item mb-3" style="border: 2px solid #3d5943; border-radius: 12px;">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2" style="font-size: 1.3rem; font-family: 'Montserrat', sans-serif; color: #3d5943;">
+                                    When to start Prasava Raksha?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:#3d5943;">
+                                    Prasava Raksha can be started soon after delivery, as advised by your doctor, to ensure optimal postnatal recovery and care.
                                 </div>
-                                <a href="#" class="h4">Benefits of a weekly physiotherapy session</a>
-                                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="blog-item rounded">
-                            <div class="blog-img">
-                                <img src="img/blog-3.jpg" class="img-fluid w-100" alt="Image">
-                            </div>
-                            <div class="blog-centent p-4">
-                                <div class="d-flex justify-content-between mb-4">
-                                    <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                                    <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+                        <div class="accordion-item mb-3" style="border: 2px solid #3d5943; border-radius: 12px;">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="true" aria-controls="faqCollapse3" style="font-size: 1.3rem; font-family: 'Montserrat', sans-serif; color: #3d5943;">
+                                    How many days is the Prasava Raksha treatment?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse show" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color:#3d5943;">
+                                    We offer the Prasava Raksha treatment as 10, 15 or 21 day packages. You can know more about the details by messaging us on WhatsApp (Click the button below).
                                 </div>
-                                <a href="#" class="h4">Regular excercise can slow ageing process</a>
-                                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Blog End -->
+        </section>
+        <!-- FAQ Section End -->
+
+        <!-- WhatsApp CTA Section Start -->
+        <section style="background:#f7f7f7; padding: 40px 0 80px 0;">
+            <div class="container text-center">
+                <h2 style="font-family: 'Montserrat', sans-serif; color: #3d5943; margin-bottom: 24px;">Book an At-Home Consultation Today</h2>
+                <ul class="mb-4" style="list-style: disc; display: inline-block; text-align: left; color: #3d5943; font-size: 1.15rem;">
+                    <li>Customized Prasava Raksha Packages for you</li>
+                    <li>Advice from Team of Qualified Doctors &amp; Therapists</li>
+                    <li>Postnatal Care for Normal &amp; C-Section Deliveries</li>
+                </ul>
+                <br>
+                <a href="https://wa.me/YOURNUMBERHERE" target="_blank" class="btn" style="background: #3d5943; color: #fff; font-size: 1.5rem; border-radius: 30px; padding: 16px 48px; font-family: 'Montserrat', sans-serif; font-weight: 600;">
+                    Message Us On WhatsApp
+                </a>
+            </div>
+        </section>
+        <!-- WhatsApp CTA Section End -->
 
 
         <!-- Footer Start -->
