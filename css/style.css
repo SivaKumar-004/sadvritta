@@ -389,59 +389,7 @@ body, html, * {
     color: var(--bs-primary) !important;
 }
 
-@media (max-width: 576px) {
-    .header-carousel .owl-nav .owl-prev,
-    .header-carousel .owl-nav .owl-next {
-        top: 630px;
-        transition: 0.5s;
-    }
 
-    .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
-        width: 95% !important;
-    }
-    .carousel-caption-content h5 {
-        font-size: 12px !important;
-    }
-    .carousel-caption-content h1 {
-        font-size: 22px !important;
-    }
-    .carousel-caption-content p {
-        font-size: 13px !important;
-    }
-        /* Carousel text sizes */
-    .carousel-caption-content h5 {
-        font-size: 12px !important;
-    }
-    .carousel-caption-content h1 {
-        font-size: 22px !important;
-    }
-    .carousel-caption-content p {
-        font-size: 13px !important;
-    }
-    /* Navbar adjustments for mobile */
-    .navbar {
-        padding-top: 0.3rem !important;
-        padding-bottom: 0.3rem !important;
-        min-height: 48px !important;
-    }
-    .navbar .navbar-brand img,
-    .navbar-light .navbar-brand img {
-        max-height: 32px !important;
-    }
-    .navbar .navbar-brand h1 {
-        font-size: 14px !important;
-    }
-    .navbar .nav-link {
-        font-size: 13px !important;
-        padding: 8px 0 !important;
-        margin-right: 8px !important;
-    }
-    .btn {
-        font-size: 13px !important;
-        padding: 6px 16px !important;
-    }
- 
-}
 
 .header-carousel .header-carousel-item,
 .header-carousel .header-carousel-item img {
