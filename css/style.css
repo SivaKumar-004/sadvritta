@@ -208,16 +208,27 @@ body, html, * {
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
+    color: var(--bs-dark) !important;
+}
+
+
+.navbar-light {
+    margin-top: 20px;
+    position: static !important;
+    
+    top: auto !important;
+    left: auto !important;
+    font-size: 16px;
     margin-right: 25px;
     padding: 35px 0;
-    color: var(--bs-dark) !important;
-    font-size: 16px;
-    font-weight: 400;
     outline: none;
+    font-weight: 400;
+    width: 100%;
+    z-index: 999;
     transition: .5s;
+    /* Remove fixed or sticky positioning so navbar scrolls with content */
 }
+
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;

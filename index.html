@@ -96,14 +96,12 @@
 
 
         <!-- Topbar Start -->
-        <div class="container-fluid bg-dark topbar-animate"
-             style="height: 70px; position: fixed; top: 0; left: 0; width: 100%; z-index: 1050;">
-            <a href="#">
-                <div class="d-flex justify-content-center align-items-center h-100" style="font-size: 1.25rem;">
-                    <button type="button" class="btn btn-primary text-white me-3 btn-animate" style="font-size: 1.1rem; padding: 10px 24px;">NEW</button>
-                    <a href="#" class="text-light text-animate" style="margin-top:7px;">Slots Open For Prasava Raksha: Book a Free Consultation →</a>
-                </div>
-            </a>
+        <div class="container-fluid bg-dark"
+             style="height: 90px; position: fixed; top: 0; left: 0; width: 100%; z-index: 1050; display: flex; align-items: center;">
+            <div class="container d-flex justify-content-center align-items-center h-100" style="font-size: 1.35rem;">
+                <button type="button" class="btn btn-primary text-white me-3" style="font-size: 1.15rem; padding: 14px 32px;">NEW</button>
+                <span class="text-light" style="margin-top:10px;">Slots Open For Prasava Raksha: Book a Free Consultation →</span>
+            </div>
         </div>
         <!-- Topbar End -->
 
@@ -111,39 +109,58 @@
         @media (max-width: 576px) {
             .topbar-animate,
             .bg-dark.topbar-animate {
-                height: 56px !important;
-                min-height: 56px !important;
+                height: 90px !important;
+                min-height: 90px !important;
             }
             .topbar-animate .btn,
             .topbar-animate button {
-                font-size: 0.95rem !important;
-                padding: 6px 14px !important;
+                font-size: 1.05rem !important;
+                padding: 10px 18px !important;
             }
             .topbar-animate .text-animate {
-                font-size: 0.95rem !important;
-                margin-top: 4px !important;
+                font-size: 1.05rem !important;
+                margin-top: 8px !important;
             }
         }
         @media (max-width: 576px) {
             nav.navbar {
-                margin-top: 56px !important;
+                margin-top: 0px !important;
             }
+            .navbar-collapse {
+                margin-top: 90px !important;
+                margin-bottom: 80px;
+            }
+            .navbar-toggler {
+                margin-top: 90px !important;
+                margin-bottom: 80px;
+            }
+            .navbar-brand {
+                margin-top: 90px !important;
+                margin-bottom: 80px;
+            }
+            .header-carousel {
+                margin-top: 10px !important;
+            }
+            .header-carousel-item{
+                margin-top: -0px !important;
+            }
+
         }
         </style>
         <!-- Navbar & Hero Start -->
         <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0" style="margin-top: 70px;">
-                <a href="index.html" class="navbar-brand p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0" style="margin-top: 10px; margin-bottom: -80px;">
+                <a href="index.html" class="navbar-brand p-0"  style="height: 150%; margin-top: 90px;">
                     <img src="img/logo.png" class="logoimage"  style="height: 100px;" alt="Logo">
 
                     <!--<img src="img/text.png" class="logoimage" alt="Logo">-->
                     <!-- <h1 class="text-primary m-0"style="font-size: 20px">SADVRITTA AYURVEDA</h1>-->
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button style="height: 150%; margin-top: 90px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div style="height: 150%; margin-top: 90px;" class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
@@ -165,8 +182,8 @@
                 </div>
             </nav>
             <!-- Carousel Start -->
-            <div class="header-carousel owl-carousel">
-                <div class="header-carousel-item">
+            <div class="header-carousel owl-carousel" style="margin-top: 90px;">
+                <div class="header-carousel-item" style="margin-top: -90px;">
                     <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="carousel-caption-content p-3">
@@ -182,7 +199,7 @@ motherhood through a qualified team of Doctors and Therapists combining
                         </div>
                     </div>
                 </div>
-                <div class="header-carousel-item"> 
+                <div class="header-carousel-item" style="margin-top: -90px;"> 
                     <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
                     <div class="carousel-caption">
                         <div class="carousel-caption-content p-3">
@@ -267,7 +284,7 @@ motherhood through a qualified team of Doctors and Therapists combining
 
 
         <!-- About Start -->
-        <div class="container-fluid about bg-light py-5" style="width: 100%;">
+        <div class="container-fluid about bg-dark    py-5" style="width: 100%;">
             <div class="container py-5" style="width: 100%;">
                 <div class="row g-5 align-items-center" style="width: 100%;">
                     <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
@@ -288,7 +305,7 @@ motherhood through a qualified team of Doctors and Therapists combining
                                 <p class="text-secondary"><i class="fa fa-check text-secondary me-2"></i> Personalized At-Home Treatment for Prasava Raksha (Post Natal Care).</p>
                                 <p class="text-secondary"><i class="fa fa-check text-secondary me-2"></i> Qualified team of Ayurvedic Doctors & Therapists.</p>
                             </div>
-                            <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
+                            <a href="#" class="btn btn-secondary rounded-pill text-white py-3 px-5">Discover More</a>
                         </div>
                     </div>
                 </div>
