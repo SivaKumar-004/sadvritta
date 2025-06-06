@@ -213,7 +213,7 @@ body, html, * {
 
 
 .navbar-light {
-    margin-top: 100vh;
+    margin-top: 20px;
     position: static !important;
     
     top: auto !important;
@@ -407,6 +407,9 @@ body, html, * {
         transition: 0.5s;
     }
 
+    .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
+        width: 95% !important;
+    }
 
     /* Navbar adjustments for mobile */
     .navbar {
