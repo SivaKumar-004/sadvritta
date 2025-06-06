@@ -96,12 +96,14 @@
 
 
         <!-- Topbar Start -->
-        <div class="container-fluid bg-dark"
-             style="height: 90px; position: fixed; top: 0; left: 0; width: 100%; z-index: 1050; display: flex; align-items: center;">
-            <div class="container d-flex justify-content-center align-items-center h-100" style="font-size: 1.35rem;">
-                <button type="button" class="btn btn-primary text-white me-3" style="font-size: 1.15rem; padding: 14px 32px;">NEW</button>
-                <span class="text-light" style="margin-top:10px;">Slots Open For Prasava Raksha: Book a Free Consultation →</span>
-            </div>
+        <div class="container-fluid bg-dark topbar-animate"
+             style="height: 90px; position: fixed; top: 0; left: 0; width: 100%; z-index: 1050;">
+            <a href="#">
+                <div class="d-flex justify-content-center align-items-center h-100" style="font-size: 1.35rem;">
+                    <button type="button" class="btn btn-primary text-white me-3 btn-animate" style="font-size: 1.15rem; padding: 14px 32px;">NEW</button>
+                    <a href="#" class="text-light text-animate" style="margin-top:10px;">Slots Open For Prasava Raksha: Book a Free Consultation →</a>
+                </div>
+            </a>
         </div>
         <!-- Topbar End -->
 
@@ -127,7 +129,7 @@
                 margin-top: 0px !important;
             }
             .navbar-collapse {
-                margin-top: 90px !important;
+                margin-top: -70px !important;
                 margin-bottom: 80px;
             }
             .navbar-toggler {
