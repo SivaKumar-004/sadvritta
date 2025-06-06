@@ -407,9 +407,6 @@ body, html, * {
         transition: 0.5s;
     }
 
-    .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
-        width: 95% !important;
-    }
 
     /* Navbar adjustments for mobile */
     .navbar {
