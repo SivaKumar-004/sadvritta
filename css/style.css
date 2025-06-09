@@ -550,13 +550,13 @@ body, html, * {
     left: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: rgba(21, 185, 217, .5);
+    background: #3c6053;
     transition: 0.5s;
     z-index: 3;
 }
 
 .service .service-item:hover .service-content::before {
-    background: rgba(21, 185, 217, .5);
+    background: rgba(0, 83, 0, 0.692);
     height: 100%;
 }
 
@@ -568,10 +568,10 @@ body, html, * {
 .service .service-item:hover .service-content .service-content-inner {
     position: relative;
     color: var(--bs-white) !important;
-    z-index: 9;
+    z-index: 9; 
 }
 .service .service-item:hover .service-content .service-content-inner h5 {
-    color: var(--bs-secondary);
+    color: var(--bs-white);
 }
 
 /*** Service End ***/
