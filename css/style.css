@@ -913,8 +913,6 @@ body, html, * {
 }
 
 
-.btn-tertiary{color:#000;background-color:#198754;border-color:#198754}.btn-tertiary:hover{color:#000;background-color:#198754;border-color:#198754}.btn-check:focus+.btn-tertiary,.btn-tertiary:focus{color:#000;background-color:#198754;border-color:#198754;box-shadow:0 0 0 .25rem rgba(30, 107, 0, 0.404)}.btn-check:checked+.btn-tertiary,.btn-check:active+.btn-tertiary,.btn-tertiary:active,.btn-tertiary.active,.show>.btn-tertiary.dropdown-toggle{color:#000;background-color:#198754;border-color:#198754}.btn-check:checked+.btn-tertiary:focus,.btn-check:active+.btn-tertiary:focus,.btn-tertiary:active:focus,.btn-tertiary.active:focus,.show>.btn-tertiary
-
 @media (max-width: 900px) {
     .testimonial .testimonial-carousel .owl-nav .owl-prev {
         margin-top: -190px;
