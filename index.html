@@ -25,12 +25,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        
+
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
         <!-- Customized Bootstrap Stylesheet -->
@@ -245,7 +245,8 @@
 
             <div class="header-carousel owl-carousel" style="margin-top: 90px;">
                 <div class="header-carousel-item" style="margin-top: -90px;">
-                    <img src="img/carousel-1.1.jpg" class="img-fluid w-100" alt="Image">
+                    <!--<img src="img/carousel-1.1.jpg" class="img-fluid w-100" alt="Image">-->
+                    <img src="img/carousel-1.1.jpg" srcset="img/carousel-1.1-480w.jpg 480w, img/carousel-1.1-800w.jpg 800w, img/carousel-1.1.jpg 1200w" sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" class="img-fluid w-100" alt="Image" loading="lazy">
                     <div class="carousel-caption">
                         <div class="carousel-caption-content p-3">
                             <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Prasava Raksha Packages in Kallambalam, Trivandrum & Kollam</h5>
@@ -551,10 +552,32 @@
         <!-- Back to Top -->
 
         
-<a href="https://wa.me/YOURNUMBERHERE" class="btn btn-success btn-lg-square position-fixed" style="bottom: 25px; right: 25px; z-index: 999;">
+<!-- Add this to your HTML -->
+<a href="https://wa.me/YOURNUMBERHERE" class="btn btn-success btn-lg-square position-fixed whatsapp-animate" style="bottom: 25px; right: 25px; z-index: 999;">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width: 30px; height: 30px;">
-
 </a>
+
+<!-- Add this CSS to your stylesheet or inside a <style> tag -->
+<style>
+.whatsapp-animate {
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+</style>
 
 
         
