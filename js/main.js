@@ -34,10 +34,7 @@
         smartSpeed: 1000,
         dots: false,
         loop: false,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-        ],
+
     });
 
 
