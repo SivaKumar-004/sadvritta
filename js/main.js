@@ -27,15 +27,10 @@
 
 
     // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'slideOutDown',
-        items: 1,
-        autoplay: false,
-        smartSpeed: 1000,
-        dots: false,
-        loop: false,
+    // $(".header-carousel").owlCarousel({
+    //     items: 1,
 
-    });
+    // });
 
 
     // International carousel
