@@ -32,6 +32,13 @@
 
     // });
 
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    mobileMenuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
 
     // International carousel
     $(".testimonial-carousel").owlCarousel({

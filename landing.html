@@ -51,7 +51,7 @@
             font-size: 1.2rem;
         }
 
-        /* Flexible Navbar */
+        /* ===================== Navbar Styles ===================== */
         .navbar {
             background: white;
             position: fixed;
@@ -160,6 +160,63 @@
             background: #333;
             transition: all 0.3s ease;
         }
+
+        @media (max-width: 1024px) {
+            .nav-container {
+                padding: 0.75rem 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0.75rem 1rem;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .logo-main {
+                font-size: 1.1rem;
+            }
+
+            .logo-sub {
+                font-size: 0.8rem;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                gap: 1rem;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0.5rem 1rem;
+            }
+        }
+        /* =================== End Navbar Styles =================== */
 
         /* Hero Section */
         .hero {
@@ -516,13 +573,6 @@
 </head>
 <body>
     <!-- Fixed Topbar -->
-    <div class="topbar">
-        <div class="topbar-content">
-            <span class="new-badge">NEW</span>
-            <span>Slots Open For Prasava Raksha: Book a Free Consultation</span>
-            <span class="arrow">→</span>
-        </div>
-    </div>
 
     <!-- Flexible Navbar -->
     <nav class="navbar">

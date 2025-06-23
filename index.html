@@ -7,7 +7,8 @@
         <meta charset="utf-8">
         <title>SADVRITTA - Ayurvedic Therapy Website Template</title>
     
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
         
         <meta content="SADVRITTA - Ayurvedic Therapy Website Template" name="author">
 
@@ -91,156 +92,36 @@
 
         <style>
         
-            /* Topbar fade-in */
-            .topbar-animate {
-                animation: topbarFadeIn 1s ease;
-            }
-            @keyframes topbarFadeIn {
-                from { opacity: 0; }
-                to { opacity: 1; }
-            }
-            /* Button slide-in from left */
-            .btn-animate {
-                animation: btnSlideIn 1s 0.2s both;
-            }
-            @keyframes btnSlideIn {
-                from { transform: translateX(-40px); opacity: 0; }
-                to { transform: translateX(0); opacity: 1; }
-            }
-            /* Text slide-in from right */
-            .text-animate {
-                animation: textSlideIn 1s 0.4s both;
-            }
-            @keyframes textSlideIn {
-                from { transform: translateX(40px); opacity: 0; }
-                to { transform: translateX(0); opacity: 1; }
-            }
-
-        @media (max-width: 576px) {
-            nav.navbar {
-                
-                margin-top: 10px !important;
-            }
-            .navbar-collapse {
-                margin-top: -70px !important;
-                margin-bottom: 80px;
-            }
-            .navbar-toggler {
-                margin-top: 90px !important;
-                margin-bottom: 80px;
-            }
-            .navbar-brand {
-                margin-top: 90px !important;
-                margin-bottom: 80px;
-            }
-            .header-carousel {
-                margin-top: 10px !important;
-            }
-            .header-carousel-item{
-                margin-top: -0px !important;
-            }
-            .btn {
-                font-size: 13px !important;
-                padding: 6px 16px !important;
-            }
-            .navbar {
-            padding-top: 0.3rem !important;
-            padding-bottom: 0.3rem !important;
-            min-height: 48px !important;
-            }
-            .navbar .navbar-brand img,
-            .navbar-light .navbar-brand img {
-                max-height: 32px !important;
-            }
-            .navbar .navbar-brand h1 {
-                font-size: 14px !important;
-            }
-            .navbar .nav-link {
-                font-size: 13px !important;
-                padding: 8px 0 !important;
-                margin-right: 8px !important;
-            }
-            .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
-                width: 100% !important;
-            }
-            .topbar-animat{
-                
-                top=0 !important;
-                position: fixed !important;
-                width: 100% !important;
-                height: 100px !important;
-                margin-top: 10px !important;
-                margin-bottom: 10px !important;
-                top: 0 !important;
-                overflow: hidden;
-            }
-            
-            .topbar-animate,
-            .bg-dark.topbar-animate {
-                height: 90px !important;
-                min-height: 90px !important;
-                position: fixed !important;
-                top: 0 !important;
-                left: 0 !important;
-                width: 100% !important;
-                max-width: 100vw !important;
-                z-index: 1050;
-                display: flex !important;
-                align-items: center !important;
-                box-sizing: border-box !important;
-                overflow: hidden;
-            }
-            .topbar-animate .container {
-                width: 100% !important;
-                max-width: 100vw !important;
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-            }
-            .topbar-animate .btn,
-            .topbar-animate button {
-                font-size: 1.05rem !important;
-                padding: 10px 18px !important;
-            }
-            .topbar-animate .text-animate {
-                font-size: 1.05rem !important;
-            }
-
-        }
+        
         </style>
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0" style="margin-top: 10px; margin-bottom: -80px;">
-                <a href="index.html" class="navbar-brand p-0"  style="height: 150%; margin-top: 90px;">
-                    <img src="img/logo.png" class="logoimage"  style="height: 100px;" alt="Logo">
 
-                    <!--<img src="img/text.png" class="logoimage" alt="Logo">-->
-                    <!-- <h1 class="text-primary m-0"style="font-size: 20px">SADVRITTA AYURVEDA</h1>-->
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button style="height: 150%; margin-top: 90px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div style="height: 150%; margin-top: 90px;" class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="appointment.html" class="dropdown-item">Appointment</a>
-                                <a href="feature.html" class="dropdown-item">Features</a>
-                                <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
+    
+
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="logo">
+                        <div class="logo-icon"><img src="img/logo 1 (2).png" class="logoimage"  style="height: 100px;" alt="Logo"></div>
+                        <div class="logo-text">
+                            <img src="img/text-removebg-preview.png" class="logoimage"  style="height: 100px;" alt="Logo">
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
+                    <ul class="nav-menu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#customers">Customers</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0"style="margin-top: -10px;">Book Appointment</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
+            
+            
             <!-- Carousel Start -->
             <div class="header-carousel" style="margin-top: 90px;">
                 <div class="header-carousel-item" style="margin-top: -90px;">
@@ -591,6 +472,19 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+         <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+
+
+
+    </script>
         
     </body>
 
