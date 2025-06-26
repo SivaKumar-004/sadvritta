@@ -266,12 +266,29 @@
             }
      
         }
+        /* ===================== whatsapp button ===================== */
 
+.whatsapp-animate {
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
 /* ===================== navbar ===================== */
 
-body, html, * {
-    font-family: "Qanelas Medium", "Montserrat", Arial, Helvetica, sans-serif !important;
-}
+
 
 
 /*** Spinner Start ***/
@@ -1190,6 +1207,9 @@ body, html, * {
     overflow: hidden;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+}
+.bg-breadcrumb {
+    margin-top: 200px;
 }
 
 .blog .blog-item .blog-img::after {
