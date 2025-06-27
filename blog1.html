@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SADVRITTA - Ayurvedic Therapy Website Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="SADVRITTA - Ayurvedic Therapy Website Template" name="author">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Blog page custom styles */
+        .blog-section {
+            margin-top: 140px;
+            padding: 40px 0 60px 0;
+            background: #f8f9fa;
+        }
+        .blog-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2d3a4b;
+        }
+        .blog-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .blog-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+            overflow: hidden;
+            max-width: 350px;
+            min-width: 270px;
+            flex: 1 1 300px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .blog-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+        .blog-card-body {
+            padding: 24px 20px 20px 20px;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a2636;
+            margin-bottom: 10px;
+        }
+        .blog-card-meta {
+            font-size: 0.95rem;
+            color: #7b8a99;
+            margin-bottom: 12px;
+        }
+        .blog-card-text {
+            font-size: 1.05rem;
+            color: #3a4a5d;
+            margin-bottom: 18px;
+            flex: 1 1 auto;
+        }
+        .read-more-btn {
+            background: #1abc9c;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 22px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+            align-self: flex-start;
+        }
+        .read-more-btn:hover {
+            background: #159c85;
+        }
+        @media (max-width: 900px) {
+            .blog-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 600px) {
+            .blog-section {
+                margin-top: 120px;
+                padding: 20px 0 40px 0;
+            }
+            .blog-title {
+                font-size: 2rem;
+            }
+            .blog-card img {
+                height: 160px;
+            }
+        }
+        /* WhatsApp floating button animation */
+        .whatsapp-animate {
+            animation: whatsapp-float 1.8s infinite ease-in-out;
+        }
+        @keyframes whatsapp-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        /* Navbar custom styles for blog page */
+        .navbar {
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+            position: fixed;
+            top: 100px;
+            left: 0;
+            z-index: 1040;
+            padding: 0 0 0 0;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 100px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logoimage {
+            height: 80px;
+            width: auto;
+        }
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-menu li a {
+            color: #2d3a4b;
+            font-weight: 500;
+            font-size: 1.08rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav-menu li a:hover {
+            color: #1abc9c;
+        }
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .mobile-menu-toggle span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #2d3a4b;
+            border-radius: 2px;
+        }
+        @media (max-width: 900px) {
+            .nav-container {
+                height: 80px;
+            }
+            .logoimage {
+                height: 60px;
+            }
+            .nav-menu {
+                gap: 16px;
+            }
+        }
+        @media (max-width: 700px) {
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100vw;
+                background: #fff;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+                box-shadow: 0 8px 24px rgba(44, 62, 80, 0.08);
+                padding: 0 0 12px 0;
+                display: none;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .mobile-menu-toggle {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark topbar-animate h-10"
+        style="height: 100px; position: fixed; top: 0;bottom:1px; left: 0; width: 100%; z-index: 1050; padding-top: 10px; margin-top: 0px; margin-bottom: -80px;">            
+        <a href="#">
+            <div class="d-flex justify-content-center h-100" style="font-size: 1.35rem;text-align: center;">                    
+                <button type="button" class="btn btn-call text-white me-3 btn-animate" style="font-size: 1.15rem; padding: 14px 32px; top:0;">NEW</button>
+                <a href="#" class="text-light text-animate" style="margin-top:10px; align-item-center">Slots Open For Prasava Raksha: Book a Free Consultation →</a>
+            </div>
+        </a>
+    </div>
+    <!-- Topbar End -->
+    <!-- navbar starts -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon"><img src="img/logo 1 (2).png" class="logoimage"  style="height: 100px;" alt="Logo"></div>
+                <div class="logo-text">
+                    <a href="index.html">
+                        <img src="img/text-removebg-preview.png" class="logoimage"  style="height: 100px;" alt="Logo">
+                    </a>                        
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#customers">Customers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0" style="margin-top: -10px;">Book Appointment</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" style="z-index: 9999;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar End -->
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/YOURNUMBERHERE" class="btn btn-success btn-lg-square position-fixed whatsapp-animate" style="bottom: 25px; right: 25px; z-index: 999;">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width: 30px; height: 30px;">
+    </a>
+    <!-- Blog Section Start -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="blog-title">Our Latest Blog Posts</h2>
+            <div class="blog-cards">
+                <!-- Blog Card 1 -->
+                <div class="blog-card">
+                    <img src="img/blog-1.jpg" alt="Ayurvedic Healing" loading="lazy">
+                    <div class="blog-card-body">
+                        <div class="blog-card-title">The Power of Ayurvedic Healing</div>
+                        <div class="blog-card-meta"><i class="far fa-calendar-alt"></i> June 2025 &nbsp; | &nbsp; <i class="fas fa-user"></i> Dr. Rahul</div>
+                        <div class="blog-card-text short">Discover how Ayurveda can transform your health and well-being with ancient wisdom and modern science. <span class="more-text" style="display:none;">From daily routines to herbal remedies, learn practical tips for a balanced lifestyle. <br> <b>Read on to unlock the secrets of holistic healing!</b></span></div>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+                <!-- Blog Card 2 -->
+                <div class="blog-card">
+                    <img src="img/blog-2.jpg" alt="Prenatal Ayurveda" loading="lazy">
+                    <div class="blog-card-body">
+                        <div class="blog-card-title">Prenatal Ayurveda: Nurturing Mother & Baby</div>
+                        <div class="blog-card-meta"><i class="far fa-calendar-alt"></i> May 2025 &nbsp; | &nbsp; <i class="fas fa-user"></i> Dr. Priya</div>
+                        <div class="blog-card-text short">Explore Ayurvedic practices for a healthy pregnancy and postnatal care. <span class="more-text" style="display:none;">Support both mother and child with nutrition, yoga, and gentle therapies. <br> <b>Empower your journey to motherhood with Ayurveda!</b></span></div>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+                <!-- Blog Card 3 -->
+                <div class="blog-card">
+                    <img src="img/blog-3.jpg" alt="Stress Relief" loading="lazy">
+                    <div class="blog-card-body">
+                        <div class="blog-card-title">Stress Relief the Ayurvedic Way</div>
+                        <div class="blog-card-meta"><i class="far fa-calendar-alt"></i> April 2025 &nbsp; | &nbsp; <i class="fas fa-user"></i> Dr. Meera</div>
+                        <div class="blog-card-text short">Learn how Ayurveda addresses stress and anxiety with natural remedies. <span class="more-text" style="display:none;">Try meditation, herbal teas, and lifestyle changes for lasting calm. <br> <b>Find your inner peace with time-tested techniques!</b></span></div>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+                <!-- Blog Card 4 -->
+                <div class="blog-card">
+                    <img src="img/service-1.jpg" alt="Detoxification" loading="lazy">
+                    <div class="blog-card-body">
+                        <div class="blog-card-title">Detoxification: Panchakarma Explained</div>
+                        <div class="blog-card-meta"><i class="far fa-calendar-alt"></i> March 2025 &nbsp; | &nbsp; <i class="fas fa-user"></i> Dr. Sadhana</div>
+                        <div class="blog-card-text short">Uncover the benefits of Panchakarma for body and mind detox. <span class="more-text" style="display:none;">Step-by-step guide to therapies, diet, and aftercare. <br> <b>Experience rejuvenation the Ayurvedic way!</b></span></div>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        // Read More/Less toggle for blog cards
+        document.querySelectorAll('.read-more-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const cardText = btn.parentElement.querySelector('.blog-card-text');
+                const moreText = cardText.querySelector('.more-text');
+                if (moreText.style.display === 'none' || moreText.style.display === '') {
+                    moreText.style.display = 'inline';
+                    btn.textContent = 'Read Less';
+                } else {
+                    moreText.style.display = 'none';
+                    btn.textContent = 'Read More';
+                }
+            });
+        });
+        // Hide spinner after page load
+        window.addEventListener('load', function() {
+            document.getElementById('spinner').classList.remove('show');
+        });
+    </script>
+</body>
+</html>
