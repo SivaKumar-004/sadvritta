@@ -122,115 +122,6 @@
             
 
             
-            <!-- Blog Section Start -->
-<section class="container blog-section py-5" style="margin-top: 140px;">
-    <div class="section-title mb-5 text-center">
-        <div class="sub-style">
-            <h4 class="sub-title px-3 mb-0">Our Blog</h4>
-        </div>
-        <h1 class="display-4 mb-4" style="color: #3d5943;">Latest Articles & News</h1>
-        <p class="text-secondary">Insights, tips, and stories from Sadvritta Ayurveda</p>
-    </div>
-    <div class="row g-4 justify-content-center">
-        <!-- Blog Post 1 -->
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm blog-card">
-                <img src="img/blog-1.jpg" class="card-img-top" alt="Ayurveda for New Mothers" loading="lazy">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title" style="color: #3d5943;">Ayurveda for New Mothers: Essential Tips</h5>
-                    <p class="card-text text-muted mb-2" style="font-size: 0.95rem;">June 27, 2025</p>
-                    <p class="card-text blog-excerpt">Discover how Ayurveda supports new mothers in their postnatal journey, from diet to daily routines. <span class="more-text d-none">Learn about herbs, therapies, and lifestyle changes that promote healing and well-being after childbirth. Our experts share practical advice for a smooth recovery and lasting health.</span></p>
-                    <a href="#" class="btn btn-outline-success mt-auto read-more-btn" style="border-radius: 30px;">Read More</a>
-                </div>
-            </div>
-        </div>
-        <!-- Blog Post 2 -->
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm blog-card">
-                <img src="img/blog-2.jpg" class="card-img-top" alt="Holistic Healing in Ayurveda" loading="lazy">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title" style="color: #3d5943;">Holistic Healing: The Ayurvedic Way</h5>
-                    <p class="card-text text-muted mb-2" style="font-size: 0.95rem;">June 20, 2025</p>
-                    <p class="card-text blog-excerpt">Explore the principles of holistic healing in Ayurveda and how they can transform your health. <span class="more-text d-none">From balancing doshas to mindful living, discover actionable steps to achieve harmony in body and mind. Real stories from our clients included!</span></p>
-                    <a href="#" class="btn btn-outline-success mt-auto read-more-btn" style="border-radius: 30px;">Read More</a>
-                </div>
-            </div>
-        </div>
-        <!-- Blog Post 3 -->
-        <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm blog-card">
-                <img src="img/blog-3.jpg" class="card-img-top" alt="Prasava Raksha Packages" loading="lazy">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title" style="color: #3d5943;">Prasava Raksha Packages: What to Expect</h5>
-                    <p class="card-text text-muted mb-2" style="font-size: 0.95rem;">June 10, 2025</p>
-                    <p class="card-text blog-excerpt">A detailed look at our Prasava Raksha packages and how they support mothers post-delivery. <span class="more-text d-none">We answer common questions, outline the process, and share testimonials from happy mothers who experienced our care.</span></p>
-                    <a href="#" class="btn btn-outline-success mt-auto read-more-btn" style="border-radius: 30px;">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Blog Section End -->
-
-<style>
-.blog-section .card {
-    border: none;
-    border-radius: 18px;
-    transition: box-shadow 0.2s;
-}
-.blog-section .card:hover {
-    box-shadow: 0 8px 32px rgba(61, 89, 67, 0.15);
-}
-.blog-section .card-img-top {
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-    height: 220px;
-    object-fit: cover;
-}
-.blog-section .card-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-.blog-section .read-more-btn {
-    color: #3d5943;
-    border-color: #3d5943;
-    font-weight: 600;
-    transition: background 0.2s, color 0.2s;
-}
-.blog-section .read-more-btn:hover {
-    background: #3d5943;
-    color: #fff;
-}
-@media (max-width: 767px) {
-    .blog-section .card-img-top {
-        height: 160px;
-    }
-    .blog-section .card-title {
-        font-size: 1.1rem;
-    }
-}
-</style>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    var readMoreBtns = document.querySelectorAll('.read-more-btn');
-    readMoreBtns.forEach(function(btn) {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            var excerpt = btn.closest('.card-body').querySelector('.blog-excerpt');
-            var moreText = excerpt.querySelector('.more-text');
-            if (moreText.classList.contains('d-none')) {
-                moreText.classList.remove('d-none');
-                btn.textContent = 'Show Less';
-            } else {
-                moreText.classList.add('d-none');
-                btn.textContent = 'Read More';
-            }
-        });
-    });
-});
-</script>
-
             <!-- Carousel Start -->
             <div class="header-carousel" style="margin-top: 244px;">
                 <div class="header-carousel-item" style="margin-top: -90px;">
@@ -384,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 btn.textContent = 'Show Less';
                 expanded = true;
             } else {
-                iframe.style.maxHeight = '120vh';
+                iframe.style.maxHeight = '100vh';
                 btn.textContent = 'Show More';
                 expanded = false;
             }
