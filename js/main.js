@@ -32,11 +32,29 @@
 
     // });
 
-    // Mobile menu toggle
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    mobileMenuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+    // Mobile menu toggle (supports multiple navbars)
+    document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenuToggles = document.querySelectorAll('.mobile-menu-toggle');
+        const navMenus = document.querySelectorAll('.nav-menu');
+        mobileMenuToggles.forEach((toggle, idx) => {
+            // Try to pair each toggle with the closest nav-menu in the DOM tree
+            let navMenu = toggle.parentElement.querySelector('.nav-menu');
+            if (!navMenu) navMenu = navMenus[idx] || navMenus[0];
+            if (navMenu) {
+                toggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    navMenu.classList.toggle('active');
+                    toggle.classList.toggle('open');
+                });
+                // Close menu when a link is clicked (for better UX)
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                        toggle.classList.remove('open');
+                    });
+                });
+            }
+        });
     });
 
 
