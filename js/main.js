@@ -12,6 +12,7 @@
     spinner(0);
     
     
+    
     // Initiate the wowjs
     new WOW().init();
 
@@ -142,4 +143,67 @@
 
 
 })(jQuery);
+
+// Only play and unmute YouTube video when Contact Us is clicked, and pause/reset when closed
+// (this replaces the previous script block for Contact Us)
+document.addEventListener('DOMContentLoaded', function () {
+    var contactLink = document.querySelector('.nav-menu a[href="#contact"]');
+    var modalEl = document.getElementById('customersModal');
+    var videoIframe = document.getElementById('testimonialVideo');
+    var videoBlock = document.getElementById('testimonialVideoBlock');
+    var imageBlock = document.getElementById('testimonialImageBlock');
+    var bsModal = null;
+    if (contactLink && modalEl && videoIframe && videoBlock && imageBlock) {
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Show video, hide image/testimonial
+            imageBlock.style.display = 'none';
+            videoBlock.style.display = '';
+            videoIframe.src = videoIframe.getAttribute('data-src');
+            if (!bsModal) bsModal = new bootstrap.Modal(modalEl);
+            bsModal.show();
+        });
+        modalEl.addEventListener('hidden.bs.modal', function () {
+            // Remove src to stop video
+            videoIframe.src = '';
+        });
+    }
+});
+
+
+// Mobile menu toggle logic for navbar
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuToggles = document.querySelectorAll('.mobile-menu-toggle');
+    const navMenus = document.querySelectorAll('.nav-menu');
+    mobileMenuToggles.forEach((toggle, idx) => {
+        let navMenu = toggle.parentElement.querySelector('.nav-menu');
+        if (!navMenu) navMenu = navMenus[idx] || navMenus[0];
+        if (navMenu) {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                navMenu.classList.toggle('active');
+                toggle.classList.toggle('open');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    toggle.classList.remove('open');
+                });
+            });
+        }
+    });
+});
+
+
+function hideSpinners() {
+            var spinner = document.getElementById('spinner');
+            if (spinner) spinner.classList.remove('show');
+            if (spinner) spinner.style.display = 'none';
+            var ayurvedaSpinner = document.getElementById('ayurveda-spinner');
+            if (ayurvedaSpinner) ayurvedaSpinner.classList.remove('show');
+            if (ayurvedaSpinner) ayurvedaSpinner.style.display = 'none';
+        }
+        window.addEventListener('load', hideSpinners);
+        // Fallback: forcibly hide after 2 seconds in case load event is missed
+        setTimeout(hideSpinners, 2000);
 

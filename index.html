@@ -87,9 +87,9 @@
         <ul class="nav-menu">
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="#customers">Customers</a></li>
+            <li><a href="#customer">Customers</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#" onclick="openCustomersModal(); return false;" >Contact Us</a></li>
             <li><a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0" style="margin-top: -10px;">Book Appointment</a></li>
         </ul>
         <div class="mobile-menu-toggle" style="z-index: 9999;">
@@ -101,23 +101,20 @@
 </nav>
 <!-- navbar End -->
         <!-- Body Section: Hero/Header Carousel Start -->
-<div class="header-carousel" style="margin-top: 244px;">
-    <div class="header-carousel-item" style="margin-top: -90px;">
-        <picture>
-            <source srcset="img/carousel-1.1.jpg" media="(max-width: 600px)" loading="lazy">
-            <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image" loading="lazy">
-        </picture>
-        <div class="carousel-caption">
-            <div class="carousel-caption-content p-3">
-                <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Prasava Raksha Packages in Trivandrum & Kollam</h5>
-                <h1 class="display-1 text-capitalize text-white mb-4">Personalized Treatment for Pregnancy and Postnatal Care</h1>
-                <p class="mb-5 fs-5">Holistic based solutions to restore balance, wellness and nurture your motherhood through a qualified team of Doctors and Therapists combining 6+ years of experience.
-                </p>
-                <a class="btn btn-primary rounded-pill text-white py-3 px-5 btn-animate" href="#">Message on WhatsApp</a>
-                <a class="btn btn-call rounded-pill text-white py-3 px-5 btn-animate" href="#">Call: +91 75608 83602</a>
-            </div>
-        </div>
+<div class="header-carousel" style="margin-top: 244px; position: relative; min-height: 420px; background: url('img/carousel-1.png') center center / cover no-repeat fixed;">
+
+  <div class="header-carousel-item" style="margin-top: -90px; position: relative; z-index: 1;">
+    <div class="carousel-caption">
+      <div class="carousel-caption-content p-3">
+        <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Prasava Raksha Packages in Trivandrum & Kollam</h5>
+        <h1 class="display-1 text-capitalize text-white mb-4">Personalized Treatment for Pregnancy and Postnatal Care</h1>
+        <p class="mb-5 fs-5">Holistic based solutions to restore balance, wellness and nurture your motherhood through a qualified team of Doctors and Therapists combining 6+ years of experience.
+        </p>
+        <a class="btn btn-primary rounded-pill text-white py-3 px-5 btn-animate" href="#">Message on WhatsApp</a>
+        <a class="btn btn-call rounded-pill text-white py-3 px-5 btn-animate" href="#">Call: +91 75608 83602</a>
+      </div>
     </div>
+  </div>
 </div>
 <!-- Body Section: Hero/Header Carousel End -->
         <!-- Services Start -->
@@ -323,7 +320,7 @@
                     <div class="d-flex align-items-center mt-2">
                         <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-youtube"></i></a>
                         <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
@@ -332,7 +329,7 @@
                 <div class="footer-item d-flex flex-column">
                     <h4 class="mb-4 text-white">Quick Links</h4>
                     <a href="about.html" class="text-white-50 mb-2">About Us</a>
-                    <a href="#" class="text-white-50 mb-2">Contact Us</a>
+                    <a href="#" class="text-white-50 mb-2" onclick="openCustomersModal(); return false;">Contact Us</a>
                     <a href="#" class="text-white-50 mb-2">Privacy Policy</a>
                     <a href="#" class="text-white-50 mb-2">Terms & Conditions</a>
                     <a href="blog.html" class="text-white-50 mb-2">Our Blog & News</a>
@@ -349,7 +346,7 @@
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column" id='contact'>
-                    <h4 class="mb-4 text-white">Contact Info</h4>
+                    <h4 class="mb-4 text-white" onclick="openCustomersModal(); return false;">Contact Info</h4>
                     <a href="#" class="text-white-50 mb-2"><i class="fa fa-map-marker-alt me-2"></i> Trivandrum & Kollam, Kerala, India</a>
                     <a href="mailto:info@sadvritta.com" class="text-white-50 mb-2"><i class="fas fa-envelope me-2"></i> info@sadvritta.com</a>
                     <a href="tel:+917560883602" class="text-white-50 mb-2"><i class="fas fa-phone me-2"></i> +91 75608 83602</a>
@@ -371,8 +368,26 @@
 </div>
 <!-- Copyright End -->
 <!-- WhatsApp Floating Button Start -->
-<a href="https://wa.me/YOURNUMBERHERE" class="btn btn-success btn-lg-square position-fixed whatsapp-animate" style="bottom: 25px; right: 25px; z-index: 999;">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width: 30px; height: 30px;">
+<a href="tel:+917560883602" class="btn btn-primary btn-lg-square position-fixed call-animate" style="bottom: 100px; right: 25px; z-index: 999; border-radius: 50%; background: #3d5943; box-shadow: 0 4px 16px rgba(61,89,67,0.18); animation: call-pulse 1.4s infinite cubic-bezier(0.4,0,0.2,1);">
+    <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Call Icon" style="width: 32px; height: 32px; animation: call-bounce 1.4s infinite cubic-bezier(0.4,0,0.2,1);">
+</a>
+<style>
+@keyframes call-pulse {
+  0% { box-shadow: 0 4px 16px rgba(61,89,67,0.18), 0 0 0 0 rgba(61,89,67,0.25); }
+  70% { box-shadow: 0 4px 16px rgba(61,89,67,0.18), 0 0 0 12px rgba(61,89,67,0); }
+  100% { box-shadow: 0 4px 16px rgba(61,89,67,0.18), 0 0 0 0 rgba(61,89,67,0); }
+}
+@keyframes call-bounce {
+  0%, 100% { transform: scale(1); }
+  20% { transform: scale(1.12); }
+  40% { transform: scale(0.96); }
+  60% { transform: scale(1.08); }
+  80% { transform: scale(0.98); }
+}
+</style>
+<br>
+<a href="https://wa.me/YOURNUMBERHERE" class="btn btn-success btn-lg-square position-fixed whatsapp-animate" style="bottom: 25px; right: 25px; z-index: 999; border-radius: 50%; background: #25d366; box-shadow: 0 4px 16px rgba(37,211,102,0.18);">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width: 45px; height: 45px;">
 </a>
 <!-- WhatsApp Floating Button End -->
         <script>
@@ -483,10 +498,98 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
 </script>
-
-
-
+<script>
+// Restore openCustomersModal for Customers link
+function openCustomersModal() {
+    var modal = new bootstrap.Modal(document.getElementById('customersModal'));
+    // Show image/testimonial, hide video
+    document.getElementById('testimonialImageBlock').style.display = '';
+    document.getElementById('testimonialVideoBlock').style.display = 'none';
+    document.getElementById('testimonialVideo').src = '';
+    modal.show();
+}
+function hideSpinners() {
+    var spinner = document.getElementById('spinner');
+    if (spinner) spinner.classList.remove('show');
+    if (spinner) spinner.style.display = 'none';
+}
+window.addEventListener('load', hideSpinners);
+setTimeout(hideSpinners, 2000);
+</script>
+<!-- ===================== Customers Modal Start ===================== -->
+<div class="modal fade" id="customersModal" tabindex="-1" aria-labelledby="customersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="customersModalLabel">Sadvritta Ayurveda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <!-- Testimonial Image/Text Block (shown for Customers link) -->
+        <div id="testimonialImageBlock">
+            <img src="img/about-2.jpg" alt="Happy Customer" class="img-fluid mb-3" style="max-height:160px; border-radius: 12px;">
+            <p style="color: #222; font-size: 1.1rem;">
+                <h4 class="mb-4 text-black" style="font-weight:600; color:#205c20;">Sadvritta Prasavaraksha</h4>
+                <ul class="mb-4" style="list-style: disc; display: inline-block; text-align: left; color: #3d5943; font-size: 1.15rem;">
+                    <li>Customized Prasava Raksha Packages for you</li>
+                    <li>Advice from Team of Qualified Doctors &amp; Therapists</li>
+                    <li>Postnatal Care for Normal &amp; C-Section Deliveries</li>
+                </ul>
+                <br>
+                <h4 class="mb-4 text-black">Contact Info</h4>
+                <a href="#" class="text-black-50 mb-2"><i class="fa fa-map-marker-alt me-2"></i> Trivandrum & Kollam, Kerala, India</a>
+                <br>
+                <a href="mailto:info@sadvritta.com" class="text-black-50 mb-2"><i class="fas fa-envelope me-2"></i> info@sadvritta.com</a>
+                <br>
+                <a href="tel:+917560883602" class="text-black-50 mb-2"><i class="fas fa-phone me-2"></i> +91 75608 83602</a>
+                <br>
+                <span style="font-weight:600; color:#205c20;">- Kollam, Trivandrum</span>
+            </p>
+        </div>
+        <!-- YouTube Video Block (shown for Contact Us link) -->
+        <div class="ratio ratio-16x9 mb-3" id="testimonialVideoBlock" style="max-width: 400px; margin: 0 auto; border-radius: 12px; overflow: hidden; display:none;">
+            <iframe id="testimonialVideo" data-src="https://www.youtube.com/embed/9nUZBFTEC_g?autoplay=1&mute=0&rel=0&modestbranding=1&playsinline=1" src="" title="YouTube video testimonial" allow="autoplay; encrypted-media" allowfullscreen style="border:0;"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center" style="border-top: none;">
+        <a href="https://wa.me/YOURNUMBERHERE" target="_blank" class="btn btn-success" style="font-size:1.1rem; border-radius:30px; padding:10px 32px; position:relative;">
+          <i class="fab fa-whatsapp"></i> Message on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===================== Customers Modal End ===================== -->
+<script>
+// Only play and unmute YouTube video when Contact Us is clicked, and pause/reset when closed
+// (this replaces the previous script block for Contact Us)
+document.addEventListener('DOMContentLoaded', function () {
+    var contactLink = document.querySelector('.nav-menu a[href="#customer"]');
+    var modalEl = document.getElementById('customersModal');
+    var videoIframe = document.getElementById('testimonialVideo');
+    var videoBlock = document.getElementById('testimonialVideoBlock');
+    var imageBlock = document.getElementById('testimonialImageBlock');
+    var bsModal = null;
+    if (contactLink && modalEl && videoIframe && videoBlock && imageBlock) {
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Show video, hide image/testimonial
+            imageBlock.style.display = 'none';
+            videoBlock.style.display = '';
+            videoIframe.src = videoIframe.getAttribute('data-src');
+            if (!bsModal) bsModal = new bootstrap.Modal(modalEl);
+            bsModal.show();
+        });
+        modalEl.addEventListener('hidden.bs.modal', function () {
+            // Remove src to stop video
+            videoIframe.src = '';
+        });
+    }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
