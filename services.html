@@ -22,6 +22,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Google Tag Manager -->
+         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-MBV3NKMQ');</script>
+         <!-- End Google Tag Manager -->```
 </head>
 
 <body>
@@ -57,10 +64,10 @@
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark topbar-animate h-10"
         style="height: 100px; position: fixed; top: 0; bottom:1px; left: 0; width: 100%; z-index: 1050; padding-top: 10px; margin-top: 0px; margin-bottom: -80px;">            
-        <a href="#">
+        <a href="https://wa.me/917560883602">
             <div class="d-flex justify-content-center h-100" style="font-size: 1.35rem; text-align: center;">                    
                 <button type="button" class="btn btn-call text-white me-3 btn-animate" style="font-size: 1.15rem; padding: 14px 32px; top:0;">NEW</button>
-                <a href="#" class="text-light text-animate" style="margin-top:10px; align-items:center;">Slots Open For Prasava Raksha: Book a Free Consultation →</a>
+                <a href="https://wa.me/917560883602" class="text-light text-animate" style="margin-top:10px; align-items:center;">Slots Open For Prasava Raksha: Book a Free Consultation →</a>
             </div>
         </a>
     </div>
@@ -83,10 +90,10 @@
         <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#customers">Customers</a></li>
+            <li><a href="#customer">Customers</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0" style="margin-top: -10px;">Book Appointment</a></li>
+            <li><a href="#" onclick="openCustomersModal(); return false;" >Contact Us</a></li>
+            <li><a href="https://wa.me/917560883602" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0" style="margin-top: -10px;">Book Appointment</a></li>
         </ul>
         <div class="mobile-menu-toggle" style="z-index: 9999;">
             <span></span>
@@ -192,7 +199,7 @@
       <div class="modal-body text-center">
         <img id="serviceModalImg" src="" alt="Service" class="img-fluid mb-3" style="max-height:180px;">
         <p id="serviceModalDesc" style="color: #000;"> </p>
-        <a id="whatsappBtn" href="#" target="_blank" class="btn btn-success mt-3" style="font-size:1.1rem; border-radius:30px; padding:10px 32px;">
+        <a id="whatsappBtn" href="https://wa.me/917560883602" target="_blank" class="btn btn-success mt-3" style="font-size:1.1rem; border-radius:30px; padding:10px 32px;">
           <i class="fab fa-whatsapp"></i> Message on WhatsApp
         </a>
       </div>
@@ -236,7 +243,7 @@ function openServiceModal(title) {
     document.getElementById('serviceModalLabel').textContent = title;
     document.getElementById('serviceModalImg').src = details.img;
     document.getElementById('serviceModalDesc').textContent = details.desc;
-    document.getElementById('whatsappBtn').href = 'https://wa.me/YOURNUMBERHERE?text=I%20am%20interested%20in%20' + encodeURIComponent(title);
+    document.getElementById('whatsappBtn').href = 'https://wa.me/917560883602?text=I%20am%20interested%20in%20' + encodeURIComponent(title);
     var modal = new bootstrap.Modal(document.getElementById('serviceModal'));
     modal.show();
 }
