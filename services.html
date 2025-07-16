@@ -402,7 +402,7 @@ function openServiceModal(title) {
             <li>Postnatal Care for Normal &amp; C-Section Deliveries</li>
         </ul>
         <br>
-        <a href="https://wa.me/YOURNUMBERHERE" target="_blank" class="btn" style="background: #3d5943; color: #fff; font-size: 1.5rem; border-radius: 30px; padding: 16px 48px; font-family: 'Montserrat', sans-serif; font-weight: 600;">
+        <a href="https://wa.me/917560883602" target="_blank" class="btn" style="background: #3d5943; color: #fff; font-size: 1.5rem; border-radius: 30px; padding: 16px 48px; font-family: 'Montserrat', sans-serif; font-weight: 600;">
             Message Us On WhatsApp
         </a>
     </div>
@@ -415,13 +415,13 @@ function openServiceModal(title) {
         <div class="row g-5">
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
-                    <h4 class="text-white mb-4"><i class="fas fa-star-of-life me-3"></i>SADVRITTA</h4>
+                    <h4 class="text-white mb-4">SADVRITTA</h4>
                     <p>Holistic Ayurvedic care for mothers and families. Personalized, at-home treatments by qualified doctors and therapists.</p>
                     <div class="d-flex align-items-center mt-2">
-                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-whatsapp"></i></a>
+                        <!--<a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="#"><i class="fab fa-facebook-f"></i></a>-->
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/sadvritta.ayurveda?igsh=MWdkb3k1a2NncGhkbw=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://m.youtube.com/@doctorsinfotainment"><i class="fab fa-youtube"></i></a>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://wa.me/917560883602"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -429,7 +429,7 @@ function openServiceModal(title) {
                 <div class="footer-item d-flex flex-column">
                     <h4 class="mb-4 text-white">Quick Links</h4>
                     <a href="about.html" class="text-white-50 mb-2">About Us</a>
-                    <a href="#" class="text-white-50 mb-2">Contact Us</a>
+                    <a href="#" class="text-white-50 mb-2" onclick="openCustomersModal(); return false;">Contact Us</a>
                     <a href="#" class="text-white-50 mb-2">Privacy Policy</a>
                     <a href="#" class="text-white-50 mb-2">Terms & Conditions</a>
                     <a href="blog.html" class="text-white-50 mb-2">Our Blog & News</a>
@@ -438,15 +438,15 @@ function openServiceModal(title) {
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="mb-4 text-white">Services</h4>
-                    <a href="#services" class="text-white-50 mb-2">All Services</a>
-                    <a href="#" class="text-white-50 mb-2">Ante Natal Care</a>
-                    <a href="#" class="text-white-50 mb-2">Post Natal Care</a>
-                    <a href="#" class="text-white-50 mb-2">Pre Bridal</a>
+                    <a href="services.html" class="text-white-50 mb-2">All Services</a>
+                    <a href="https://wa.me/917560883602?text=I%20am%20interested%20in%20Ante%20Natal%20Care" class="text-white-50 mb-2">Ante Natal Care</a>
+                    <a href="https://wa.me/917560883602?text=I%20am%20interested%20in%20Post%20Natal%20Care" class="text-white-50 mb-2">Post Natal Care</a>
+                    <a href="https://wa.me/917560883602?text=I%20am%20interested%20in%20Pre%20Bridal" class="text-white-50 mb-2">Pre Bridal</a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3" >
                 <div class="footer-item d-flex flex-column" id='contact'>
-                    <h4 class="mb-4 text-white">Contact Info</h4>
+                    <h4 class="mb-4 text-white" onclick="openCustomersModal(); return false;">Contact Info</h4>
                     <a href="#" class="text-white-50 mb-2"><i class="fa fa-map-marker-alt me-2"></i> Trivandrum & Kollam, Kerala, India</a>
                     <a href="mailto:info@sadvritta.com" class="text-white-50 mb-2"><i class="fas fa-envelope me-2"></i> info@sadvritta.com</a>
                     <a href="tel:+917560883602" class="text-white-50 mb-2"><i class="fas fa-phone me-2"></i> +91 75608 83602</a>
@@ -458,7 +458,7 @@ function openServiceModal(title) {
 <!-- Footer End -->
 
 <!-- Copyright Start -->
-<div class="container-fluid copyright py-4" style="background: #181818; color: #bbb;">
+<div class="container-fluid copyright py-4" style="background: #181818; color: #bbb; margin-bottom: -25px;">
     <div class="container">
         <div class="row g-4 align-items-center">
             <div class="col-12 text-center">
@@ -470,10 +470,42 @@ function openServiceModal(title) {
 <!-- Copyright End -->
 
 <!-- WhatsApp Floating Button Start -->
+<a href="tel:+917560883602" class="btn btn-primary btn-lg-square position-fixed call-animate" style="bottom: 100px; right: 25px; z-index: 999; border-radius: 50%; background: #3d5943; box-shadow: 0 4px 16px rgba(61,89,67,0.18); animation: call-pulse 1.4s infinite cubic-bezier(0.4,0,0.2,1);">
+    <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Call Icon" style="width: 32px; height: 32px; animation: call-bounce 1.4s infinite cubic-bezier(0.4,0,0.2,1);">
+</a>
+<style>
+@keyframes call-pulse {
+  0% { box-shadow: 0 4px 16px rgba(61,89,67,0.18), 0 0 0 0 rgba(61,89,67,0.25); }
+  70% { box-shadow: 0 4px 16px rgba(61,89,67,0.18), 0 0 0 12px rgba(61,89,67,0); }
+  100% { box-shadow: 0 4px 16px rgba(61,89,67,0.18), 0 0 0 0 rgba(61,89,67,0); }
+}
+@keyframes call-bounce {
+  0%, 100% { transform: scale(1); }
+  20% { transform: scale(1.12); }
+  40% { transform: scale(0.96); }
+  60% { transform: scale(1.08); }
+  80% { transform: scale(0.98); }
+}
+</style>
+<br>
 <a href="https://wa.me/YOURNUMBERHERE" class="btn btn-success btn-lg-square position-fixed whatsapp-animate" style="bottom: 25px; right: 25px; z-index: 999;">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" style="width: 30px; height: 30px;">
 </a>
+<!-- WhatsApp Floating Button End -->
 
+ <script>
+        function hideSpinners() {
+            var spinner = document.getElementById('spinner');
+            if (spinner) spinner.classList.remove('show');
+            if (spinner) spinner.style.display = 'none';
+            var ayurvedaSpinner = document.getElementById('ayurveda-spinner');
+            if (ayurvedaSpinner) ayurvedaSpinner.classList.remove('show');
+            if (ayurvedaSpinner) ayurvedaSpinner.style.display = 'none';
+        }
+        window.addEventListener('load', hideSpinners);
+        // Fallback: forcibly hide after 2 seconds in case load event is missed
+        setTimeout(hideSpinners, 2000);
+        </script>
 <!-- WhatsApp Floating Button End -->
 <script>
 // Mobile menu toggle logic for navbar
@@ -500,6 +532,173 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+<!-- ===================== Customers Modal Start ===================== -->
+<div class="modal fade" id="customersModal" tabindex="-1" aria-labelledby="customersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="customersModalLabel">Sadvritta Ayurveda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <!-- Testimonial Image/Text Block (shown for Customers link) -->
+        <div id="testimonialImageBlock">
+            <img src="img/about-2.jpg" alt="Happy Customer" class="img-fluid mb-3" style="max-height:160px; border-radius: 12px;">
+            <p style="color: #222; font-size: 1.1rem;">
+                <h4 class="mb-4 text-black" style="font-weight:600; color:#205c20;">Sadvritta Prasavaraksha</h4>
+                <ul class="mb-4" style="list-style: disc; display: inline-block; text-align: left; color: #3d5943; font-size: 1.15rem;">
+                    <li>Customized Prasava Raksha Packages for you</li>
+                    <li>Advice from Team of Qualified Doctors &amp; Therapists</li>
+                    <li>Postnatal Care for Normal &amp; C-Section Deliveries</li>
+                </ul>
+                <br>
+                <h4 class="mb-4 text-black">Contact Info</h4>
+                <a href="#" class="text-black-50 mb-2"><i class="fa fa-map-marker-alt me-2"></i> Trivandrum & Kollam, Kerala, India</a>
+                <br>
+                <a href="mailto:info@sadvritta.com" class="text-black-50 mb-2"><i class="fas fa-envelope me-2"></i> info@sadvritta.com</a>
+                <br>
+                <a href="tel:+917560883602" class="text-black-50 mb-2"><i class="fas fa-phone me-2"></i> +91 75608 83602</a>
+                <br>
+                <span style="font-weight:600; color:#205c20;">- Kollam, Trivandrum</span>
+            </p>
+        </div>
+        <!-- YouTube Video Block (shown for Contact Us link) -->
+        <div class="ratio ratio-16x9 mb-3" id="testimonialVideoBlock" style="max-width: 400px; margin: 0 auto; border-radius: 12px; overflow: hidden; display:none;">
+            <iframe id="testimonialVideo" data-src="https://www.youtube.com/embed/9nUZBFTEC_g?autoplay=1&mute=0&rel=0&modestbranding=1&playsinline=1" src="" title="YouTube video testimonial" allow="autoplay; encrypted-media" allowfullscreen style="border:0;"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center" style="border-top: none;">
+        <a href="https://wa.me/917560883602" target="_blank" class="btn btn-success" style="font-size:1.1rem; border-radius:30px; padding:10px 32px; position:relative;">
+          <i class="fab fa-whatsapp"></i> Message on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===================== Customers Modal End ===================== -->
+<script>
+// Only play and unmute YouTube video when Contact Us is clicked, and pause/reset when closed
+// (this replaces the previous script block for Contact Us)
+document.addEventListener('DOMContentLoaded', function () {
+    var contactLink = document.querySelector('.nav-menu a[href="#contact"]');
+    var modalEl = document.getElementById('customersModal');
+    var videoIframe = document.getElementById('testimonialVideo');
+    var videoBlock = document.getElementById('testimonialVideoBlock');
+    var imageBlock = document.getElementById('testimonialImageBlock');
+    var bsModal = null;
+    if (contactLink && modalEl && videoIframe && videoBlock && imageBlock) {
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Show video, hide image/testimonial
+            imageBlock.style.display = 'none';
+            videoBlock.style.display = '';
+            videoIframe.src = videoIframe.getAttribute('data-src');
+            if (!bsModal) bsModal = new bootstrap.Modal(modalEl);
+            bsModal.show();
+        });
+        modalEl.addEventListener('hidden.bs.modal', function () {
+            // Remove src to stop video
+            videoIframe.src = '';
+        });
+    }
+});
+
+</script>
+<script>
+// Restore openCustomersModal for Customers link
+function openCustomersModal() {
+    var modal = new bootstrap.Modal(document.getElementById('customersModal'));
+    // Show image/testimonial, hide video
+    document.getElementById('testimonialImageBlock').style.display = '';
+    document.getElementById('testimonialVideoBlock').style.display = 'none';
+    document.getElementById('testimonialVideo').src = '';
+    modal.show();
+}
+function hideSpinners() {
+    var spinner = document.getElementById('spinner');
+    if (spinner) spinner.classList.remove('show');
+    if (spinner) spinner.style.display = 'none';
+}
+window.addEventListener('load', hideSpinners);
+setTimeout(hideSpinners, 2000);
+</script>
+<!-- ===================== Customers Modal Start ===================== -->
+<div class="modal fade" id="customersModal" tabindex="-1" aria-labelledby="customersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="customersModalLabel">Sadvritta Ayurveda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <!-- Testimonial Image/Text Block (shown for Customers link) -->
+        <div id="testimonialImageBlock">
+            <img src="img/about-2.jpg" alt="Happy Customer" class="img-fluid mb-3" style="max-height:160px; border-radius: 12px;">
+            <p style="color: #222; font-size: 1.1rem;">
+                <h4 class="mb-4 text-black" style="font-weight:600; color:#205c20;">Sadvritta Prasavaraksha</h4>
+                <ul class="mb-4" style="list-style: disc; display: inline-block; text-align: left; color: #3d5943; font-size: 1.15rem;">
+                    <li>Customized Prasava Raksha Packages for you</li>
+                    <li>Advice from Team of Qualified Doctors &amp; Therapists</li>
+                    <li>Postnatal Care for Normal &amp; C-Section Deliveries</li>
+                </ul>
+                <br>
+                <h4 class="mb-4 text-black">Contact Info</h4>
+                <a href="#" class="text-black-50 mb-2"><i class="fa fa-map-marker-alt me-2"></i> Trivandrum & Kollam, Kerala, India</a>
+                <br>
+                <a href="mailto:info@sadvritta.com" class="text-black-50 mb-2"><i class="fas fa-envelope me-2"></i> info@sadvritta.com</a>
+                <br>
+                <a href="tel:+917560883602" class="text-black-50 mb-2"><i class="fas fa-phone me-2"></i> +91 75608 83602</a>
+                <br>
+                <span style="font-weight:600; color:#205c20;">- Kollam, Trivandrum</span>
+            </p>
+        </div>
+        <!-- YouTube Video Block (shown for Contact Us link) -->
+        <div class="ratio ratio-16x9 mb-3" id="testimonialVideoBlock" style="max-width: 400px; margin: 0 auto; border-radius: 12px; overflow: hidden; display:none;">
+            <iframe id="testimonialVideo" data-src="https://www.youtube.com/embed/9nUZBFTEC_g?autoplay=1&mute=0&rel=0&modestbranding=1&playsinline=1" src="" title="YouTube video testimonial" allow="autoplay; encrypted-media" allowfullscreen style="border:0;"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center" style="border-top: none;">
+        <a href="https://wa.me/917560883602" target="_blank" class="btn btn-success" style="font-size:1.1rem; border-radius:30px; padding:10px 32px; position:relative;">
+          <i class="fab fa-whatsapp"></i> Message on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===================== Customers Modal End ===================== -->
+<script>
+// Only play and unmute YouTube video when Contact Us is clicked, and pause/reset when closed
+// (this replaces the previous script block for Contact Us)
+document.addEventListener('DOMContentLoaded', function () {
+    var contactLink = document.querySelector('.nav-menu a[href="#customer"]');
+    var modalEl = document.getElementById('customersModal');
+    var videoIframe = document.getElementById('testimonialVideo');
+    var videoBlock = document.getElementById('testimonialVideoBlock');
+    var imageBlock = document.getElementById('testimonialImageBlock');
+    var bsModal = null;
+    if (contactLink && modalEl && videoIframe && videoBlock && imageBlock) {
+        contactLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Show video, hide image/testimonial
+            imageBlock.style.display = 'none';
+            videoBlock.style.display = '';
+            videoIframe.src = videoIframe.getAttribute('data-src');
+            if (!bsModal) bsModal = new bootstrap.Modal(modalEl);
+            bsModal.show();
+        });
+        modalEl.addEventListener('hidden.bs.modal', function () {
+            // Remove src to stop video
+            videoIframe.src = '';
+        });
+    }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBV3NKMQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </html>
+
 

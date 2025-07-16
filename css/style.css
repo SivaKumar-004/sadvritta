@@ -750,7 +750,29 @@
     font-weight: 600;
     letter-spacing: 4px;
 }
-
+.sub1-title::before {
+    content: "";
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-top: 8px;
+    margin-right: -100px;
+    border: 1px solid var(--bs-secondary) !important;
+    color: white;
+}
+.sub1-title::after {
+    content: "";
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-bottom: 8px;
+    margin-right: -50px;
+    border: 1px solid var(--bs-secondary) !important;
+}
 /*** About End ***/
 
 /*** Feature Start ***/
