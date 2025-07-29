@@ -5,11 +5,11 @@
 
     <head>
         <meta charset="utf-8">
-        <title>SADVRITTA - Ayurvedic Therapy Website Template</title>
+        <title>SADVRITTA - AYURVEDA</title>
     
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-        
+        <link rel="icon" href="img/pic.png" type="image/x-icon">
         <meta content="SADVRITTA - Ayurvedic Therapy Website Template" name="author">
 
         <meta content="" name="keywords">
@@ -124,55 +124,41 @@
   </div>
 </div>
 <!-- Body Section: Hero/Header Carousel End -->
-        <!-- Services Start -->
-<div class="container-fluid service py-5">
+
+<section id="services" class="py-5" style="background: #f7f7f7;">
     <div class="container py-5">
-        <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="sub-style">
-                <h4 class="sub-title px-3 mb-0">What We Do</h4>
-            </div>
-            <h1 class="display-3 mb-4">Our Service Given By Experts.</h1>
+        <div class="section-title text-center mb-5">
+            <h2 class="display-4 mb-3" style="color: #3d5943; font-family: 'Playfair Display', serif;">Our Services</h2>
+            <p class="lead" style="color: #000;">We offer a range of holistic Ayurvedic therapies and care packages for mothers and families.</p>
         </div>
         <div class="row g-4 justify-content-center">
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded">
-                    <div class="service-img rounded-top">
-                        <img src="img/service-1.png" class="img-fluid rounded-top w-100" alt="">
-                    </div>
-                    <div class="service-content rounded-bottom bg-light p-4">
-                        <div class="service-content-inner">
-                            <h5 class="mb-4">Ante Natal Care</h5>
-                            <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                            <a href="https://wa.me/917560883602?text=I%20am%20interested" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Book Now</a>
-                        </div>
+            <!-- Service Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100 shadow-sm border-0" style="cursor:pointer;" onclick="openServiceModal('Ante Natal Care')">
+                    <img src="img/service-1.png" class="card-img-top" alt="Ante Natal Care">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #205c20;">Ante Natal Care</h5>
+                        <p class="card-text" style="color: #000;">Personalized care and therapies for expecting mothers.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item rounded">
-                    <div class="service-img rounded-top">
-                        <img src="img/service-2.png" class="img-fluid rounded-top w-100" alt="">
-                    </div>
-                    <div class="service-content rounded-bottom bg-light p-4">
-                        <div class="service-content-inner">
-                            <h5 class="mb-4">Post Natal Care</h5>
-                            <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                            <a href="https://wa.me/917560883602?text=I%20am%20interested" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Book Now</a>
-                        </div>
+            <!-- Service Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100 shadow-sm border-0" style="cursor:pointer;" onclick="openServiceModal('Post Natal Care')">
+                    <img src="img/service-2.png" class="card-img-top" alt="Post Natal Care">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #205c20;">Post Natal Care</h5>
+                        <p class="card-text" style="color: #000;">Holistic postnatal care for new mothers.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="service-item rounded">
-                    <div class="service-img rounded-top">
-                        <img src="img/service-3.png" class="img-fluid rounded-top w-100" alt="">
-                    </div>
-                    <div class="service-content rounded-bottom bg-light p-4">
-                        <div class="service-content-inner">
-                            <h5 class="mb-4">Pre Bridal</h5>
-                            <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                            <a href="https://wa.me/917560883602?text=I%20am%20interested" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Book Now</a>
-                        </div>
+            <!-- Service Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100 shadow-sm border-0" style="cursor:pointer;" onclick="openServiceModal('Pre Bridal Care')">
+                    <img src="img/service-3.png" class="card-img-top" alt="Pre Bridal Care">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #205c20;">Pre Bridal Care</h5>
+                        <p class="card-text" style="color: #000;">Ayurvedic beauty and wellness therapies for brides-to-be.</p>
                     </div>
                 </div>
             </div>
@@ -181,12 +167,11 @@
             </div>
         </div>
     </div>
-</div>
-<!-- Services End -->
+</section>
        
         <!-- Feature Start -->
 <div class="container-fluid feature bg-dark py-5" style="min-height: 150vh; margin-top: -20px;">
-    <div class="container py-5">
+    <div class="container py-5">    
         <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s"  style="color:#fff; text-shadow:0 2px 8px rgba(0,0,0,0.18);">
             <div class="sub1-style" >
                 <h4 class="section-title px-3 mb-0"  style="color:#fff; text-shadow:0 2px 8px rgba(0,0,0,0.18);">Our Wall Of Love</h4>
