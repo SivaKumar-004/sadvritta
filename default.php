@@ -62,7 +62,7 @@
             30% { transform: scale(1.13); }
             60% { transform: scale(0.97); }
             100% { transform: scale(1); }
-        }
+        }q
         </style>
         <!-- Ayurvedic Spinner End -->
         <!-- Topbar Start -->
